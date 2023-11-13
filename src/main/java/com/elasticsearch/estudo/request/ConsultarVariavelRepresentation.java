@@ -1,4 +1,4 @@
-package com.elasticsearch.estudo.representation;
+package com.elasticsearch.estudo.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ConsultarVariavelRepresentation {
-
-    private String nuCpfCnpj;
+    private String numeroCpfCnpj;
     private String id;
 }

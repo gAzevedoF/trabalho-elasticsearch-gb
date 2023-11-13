@@ -7,119 +7,219 @@
 	},
 	"item": [
 		{
-			"name": "InserirIndice",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nomeIndice\": \"variavel\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Indice",
+			"item": [
+				{
+					"name": "InserirIndice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeIndice\": \"00000000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/criarIndice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"criarIndice"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/criarIndice",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"criarIndice"
-					]
+				{
+					"name": "DeletarIndice",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomeIndice\": \"indice_para_deletar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/criarIndice",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"criarIndice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConsultarIndices",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/consultarIndices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"consultarIndices"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "InserirVariavel",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nuCpfCnpj\": \"000\",\r\n    \"id\": \"1\",\r\n    \"variavelCredito\": {\r\n        \"nome\": \"score\",\r\n        \"valor\": \"567\"\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Variaveis",
+			"item": [
+				{
+					"name": "InserirVariavel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nuCpfCnpj\": \"00000000000\",\r\n    \"id\": \"1\",\r\n    \"variavelCredito\": {\r\n        \"nome\": \"AltoValor\",\r\n        \"valor\": \"SIM\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/inserirVariavel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"inserirVariavel"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/inserirVariavel",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"inserirVariavel"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "DeletarVariavel",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nuCpfCnpj\": \"000\",\r\n    \"id\": \"1\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "DeletarVariavel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCpfCnpj\": \"00000000000\",\r\n    \"id\": \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/deletarVariavel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"deletarVariavel"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/deletarVariavel",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"deletarVariavel"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "consultarVariavel",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"nuCpfCnpj\": \"000\",\r\n    \"id\": \"1\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "ConsultarVariavel",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCpfCnpj\": \"00000000000\",\r\n    \"id\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/consultarVariavel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"consultarVariavel"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/consultarVariavel",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"consultarVariavel"
-					]
+				{
+					"name": "ConsultarTodasVariaveis",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroCpfCnpj\": \"00000000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/consultarTodasVariaveis",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"consultarTodasVariaveis"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		}
 	]
 }

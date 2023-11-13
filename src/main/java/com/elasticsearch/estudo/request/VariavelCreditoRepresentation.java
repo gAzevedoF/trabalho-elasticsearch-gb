@@ -1,4 +1,4 @@
-package com.elasticsearch.estudo.representation;
+package com.elasticsearch.estudo.request;
 
 import com.elasticsearch.estudo.domain.VariavelCredito;
 import lombok.AllArgsConstructor;

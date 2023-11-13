@@ -1,4 +1,4 @@
-package com.elasticsearch.estudo.representation;
+package com.elasticsearch.estudo.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
